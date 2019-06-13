@@ -52,3 +52,13 @@ pipeline {
         }
     }
 }
+
+
+
+node {
+git 'https://github.com/devopssupraja/Maven-Demo.git'
+bat 'mvn clean'
+bat 'mvn install'
+sh 'cp -rp "C:\\Program Files (x86)\\Jenkins\\workspace\\firstpipe\\multi-module\\webapp\\target\\webapp.war" "C:\\Program Files\\Apache Software Foundation\\Tomcat 8.5\\webapps"'
+    
+}
