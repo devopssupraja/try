@@ -6,6 +6,10 @@ pipeline {
             steps {
                 bat 'set'
             }
+            stage('test'){
+            steps{
+            bat 'set'
+            }
         }
     }
 }
